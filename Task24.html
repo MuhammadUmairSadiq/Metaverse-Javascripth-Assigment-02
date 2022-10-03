@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<title>Task 24</title>
+<script>
+  var car = "Civic";   
+  if(car == "Civic") { console.log("It is Civic.") }
+  else (console.log("It's not Civic"))
+
+  var pass = "Umair";     
+  if(pass != "Umair") { console.log("Log In Failed!") }
+  else (console.log("Log In done.!"))
+
+  var pass = "umair"; 
+  if(pass != "Umair") { console.log("Log In Failed!") }
+  else (console.log("Log In done.!"))
+  
+  var result = 40;       
+  if(result >= 50) { console.log("You are pass.") }
+  else (console.log("You are fail."))
+
+  var result = 80;       
+  if(result >= 50) { console.log("You are pass.") }
+  else (console.log("You are fail."))
+
+  var salary = 55000;       
+  if(salary < 100,000) { console.log("You have a good salary") }
+  else (console.log("You have a bad salary"))
+
+  var bill = 15000;      
+  if(bill > 12000) { console.log("You bill is High.") }
+  else (console.log("Your bill is Low."))
+
+  var speed = 80;   
+  if(speed <= 60) { console.log("No Fine.") }
+  else (console.log("Your Fine is 2000."))
+
+  var lucky = 16;    
+  if(lucky == 16) { console.log("Umair's Lucky Number") }
+  else (console.log("16 is a lucky number of Umair"))
+
+  var car = "LC200";       // false
+  if(car == "Civic" || car == "City") { console.log("It is Honda Car.") }
+  else (console.log("It's not Honda Car."))
+
+  var result = 80;       
+  if(result >= 70 && result <= 100) { console.log("You got A Grade") }
+  else (console.log("You did not get A Garde"))
+
+  var cars = ["Civic","City","LC200","Grande","Waganor"];
+  var flag = false;
+  var key = "LC200"
+
+  for (let i = 0; i < cars.length; i++) {
+      if(cars[i] == key) {
+          document.write("Your Car is Available");
+          flag = true;
+          break;
+      } 
+  }
+  if(flag == false) {
+          document.write("Your Car is not Available");
+  }
+
+  var num = [16,89,56,44,39];
+  var check = false;
+  var key1 = "99"
+
+  for (let i = 0; i < num.length; i++) {
+      if(num[i] == key1) {
+          document.write("Your Number is Found.");
+          check = true;
+          break;
+      } 
+  }
+  if(check == false) {
+          document.write("Your Number is not Found.");
+  }
+</script>
+<body></body>
+</html>

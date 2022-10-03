@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<title>Task 19</title>
+<script>
+   var count=0;
+   var names = ["Umer","Abdullah","Mohid"];     // invitatiion send
+   document.write(names[0]);
+   document.write(" Hopefully you are Fine.I cordially invite you to the dinner to be held at my residence from 7 pm onwards next Sunday.");
+   count++;
+   document.write("<br>");
+   document.write(names[1]);
+   document.write(" Hopefully you are Fine.I cordially invite you to the dinner to be held at my residence from 7 pm onwards next Sunday.");
+   count++;
+   document.write("<br>");
+   document.write(names[2]);
+   document.write(" Hopefully you are Fine.I cordially invite you to the dinner to be held at my residence from 7 pm onwards next Sunday.");
+   count++;
+
+   document.write("<br>");
+   document.write(names[2]);       // request refused
+   document.write(" refused the invitation due to some personal reasons");
+   document.write("<br>");
+
+   names.pop();    
+
+   names.push("Ali")
+
+   document.write("<br>");
+   document.write(names[2]);      
+   document.write(" Hopefully you are Fine.I cordially invite you to the dinner to be held at my residence from 7 pm onwards next Sunday.");
+   count++;
+   document.write("<br>");
+
+   document.write("<br>");  
+   document.write(" I would like to inform all the members that i arranging a  bigger place for dinner.");
+   document.write("<br>");
+
+   names.unshift("Umair");
+   names.splice(2,0,"Talha");
+   names.push("Adeel");
+   
+   for (let i = 0; i < names.length; i++) {
+    document.write(names[i]);
+    document.write(" Hopefully you are Fine.I cordially invite you to the dinner to be held at my residence from 7 pm onwards next Sunday.");
+    document.write("<br>");   
+   }
+   count = names.length+1;
+   document.write("<br>");  
+   document.write("Sorry Guys! Just let you know that these place is not available for dinner.That's why Now I am only inviting two peoples.");
+   document.write("<br>");
+
+   names.pop();
+   names.pop();
+   names.pop();
+   names.pop();
+
+   for (let i = 0; i < names.length; i++) {
+    document.write(names[i]);
+    document.write(" Just let you know that you are still inviting for dinner on next Sunday.");
+    document.write("<br>");   
+   }
+
+   names.pop();
+   names.pop();
+
+   for (let i = 0; i < names.length; i++) {
+    document.write(names[i]);
+    document.write("<br>");   
+   }
+
+   document.write("<br>"); 
+   document.write(count); 
+   document.write(" peolpes are invited for dinner on sunday");
+   document.write("<br>");
+</script>
+<body></body>
+</html>

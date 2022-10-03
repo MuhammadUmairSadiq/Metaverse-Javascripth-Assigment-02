@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<title>Task 43</title>
+<script>
+
+function make_great(a) {
+    var arr=[];
+      for (let i = 0; i < a.length; i++) {
+        arr[i]= "The Great "+a[i];
+      }
+      return arr;
+  }
+  function show_magician(a) {
+      for (let i = 0; i < a.length; i++) {
+        document.write(a[i]);
+        document.write("<br>");   
+      }
+  }
+  
+  var magicain = ["Harry Houdini","Penn and Teller","David Blaine"];
+  var greatmag= make_great(magicain);
+  show_magician(magicain);
+  show_magician(greatmag);
+
+
+</script>
+<body></body>
+</html>

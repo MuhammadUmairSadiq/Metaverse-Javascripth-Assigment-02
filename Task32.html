@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<title>Task 32</title>
+<script>
+  var current_users = ["Umer","Admin","Ali","Mohid","Amina","Zoha"];
+  var new_users=["Umair","Ali","ZOHA","Kamran"];
+
+  for (let i = 0; i < new_users.length; i++) {
+      var flag = false;
+      new_users[i].toLowerCase();
+      for (let j = 0; j < current_users.length; j++) {
+        current_users[j].toLowerCase();
+        if(new_users[i] == current_users[j]) {
+          document.write("Username is not available.Try Another!");
+          document.write("<br>");
+          flag = true;
+          break;
+        } 
+    }
+    if (flag == false) {
+        document.write("Username is available.");
+        document.write("<br>");
+        }  
+  }
+
+</script>
+<body></body>
+</html>
